@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.14.0" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="dbup" Version="5.0.41" />
+    <PackageReference Include="dbup-postgresql" Version="6.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.5" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="OpenAI" Version="2.2.0-beta.4" />
+    <PackageReference Include="Postmark" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<EmbeddedResource Include="Repository/Database/Queries/**/*.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Repository\Database\Scripts\0001_CreateInboundEmailsTable.sql" />
+    <None Remove="Repository\Database\Scripts\0002_CreateActionItemTable.sql" />
+    <None Remove="Repository\Database\Scripts\0003_CreateBulletTable.sql" />
+    <None Remove="Repository\Database\Scripts\0004_CreateDecisionTable.sql" />
+    <None Remove="Repository\Database\Scripts\0005_CreateKeyDateTable.sql" />
+    <None Remove="Repository\Database\Scripts\0006_CreateParticipantTable.sql" />
+    <None Remove="Repository\Database\Scripts\0007_CreateSummarizationTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Repository\Database\Scripts\0001_CreateInboundEmailsTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0002_CreateActionItemTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0003_CreateBulletTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0004_CreateDecisionTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0005_CreateKeyDateTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0006_CreateParticipantTable.sql" />
+    <EmbeddedResource Include="Repository\Database\Scripts\0007_CreateSummarizationTable.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BulletSummarizer.Core\BulletSummarizer.Core.csproj" />
+  </ItemGroup>
+</Project>

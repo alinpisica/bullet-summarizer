@@ -1,0 +1,96 @@
+============ Forwarded message ============
+From: AlinPisica WebsiteContact <alin.pisica.web.contact@gmail.com>
+To: "testmail janedoe"<testmailjanedoe730@gmail.com>
+Cc: "Alin Pisica"<contact@alinpisica.com>
+Date: Sun, 01 Jun 2025 22:33:22 +0300
+Subject: Re: Urgent: FitFit Launch Status – Bugs Still in QA?
+============ Forwarded message ============
+
+
+Will do, Jane.
+I’ll prepare a fallback launch plan (Aug 21) with revised Marketing and QA checkpoints just in case. Will share with you tomorrow morning.
+Also, I suggest we lock down any non-critical merges starting Monday. Alin, let’s finalize that cutoff list on our 10AM sync tomorrow.
+We’ll make this launch happen 💪
+
+Cheers,
+ —
+ Mike Rays
+ Chief Technology Officer
+ 📞 +1 (555) 224-7765
+ ✉️
+
+
+În dum., 1 iun. 2025 la 22:33, testmail janedoe < mailto:testmailjanedoe730@gmail.com > a scris:
+
+Thanks both, this gives me more confidence.
+Mike – let’s get a contingency plan in place anyway. Can you prep a quick internal doc outlining what the “Plan B” would look like if we needed to delay by 5 days?
+Alin – great work jumping on these issues. Please send me a short daily update until the weekend. Doesn’t need to be long – just a few bullet points so I can keep stakeholders in the loop.
+
+Thanks,
+ —
+ Jane Doe
+ Chief Executive Officer
+ 📞 +1 (555) 010-1987
+ ✉️
+
+
+On Sun, Jun 1, 2025 at 10:32 PM Alin Pisica < mailto:contact@alinpisica.com > wrote:
+
+Hi Mike, Jane,
+Quick update on my side:
+✅ iOS crash: root cause found (Bluetooth permission regression in the new onboarding flow). Fix is in progress, should be in QA before lunch.
+🔄 Sync issue: looks like the wearable module sends a malformed timestamp when the phone app is in background mode. I'm working on a patch that auto-corrects it on the mobile side. ETA: end of day.
+If we don’t find anything new, both of these will be resolved this week.
+Let me know if anything else pops up.
+
+Best,
+—
+Alin Pisica
+Software Developer
+📞 +1 (555) 988-2210
+✉️
+
+
+---- On Sun, 01 Jun 2025 22:31:55 +0300 AlinPisica WebsiteContact < mailto:alin.pisica.web.contact@gmail.com > wrote ---
+
+
+Hi Jane,
+
+I understand the concern. I’ve already gone through the high-priority issues. Out of the 7:
+
+3 are already in review, fix is done.
+2 are visual bugs on smaller Android screens – not launch blockers in my opinion.
+1 involves syncing between wearable and mobile – that one needs deeper investigation.
+1 crash reported on some iOS builds – flagged by QA yesterday.
+
+Alin is working on the iOS crash right now. I’ll let him chime in on the sync issue.
+We should be fine for 16th if we stay focused. I don’t recommend postponing yet.
+
+Cheers,
+ —
+ Mike Rays
+ Chief Technology Officer
+ 📞 +1 (555) 224-7765
+ ✉️
+
+
+În dum., 1 iun. 2025 la 22:31, testmail janedoe < mailto:testmailjanedoe730@gmail.com > a scris:
+
+Hi Mike, Alin,
+
+I’ve just reviewed the QA dashboard this morning and noticed that we still have 7 open bugs marked as “high priority”. With only 15 days until launch, I’m getting worried.
+
+Can we please regroup and assess:
+
+- Which of these are actual blockers?
+- What’s realistically going to be fixed before the 16th?
+- Do we need to consider pushing back the launch?
+
+Let’s sync before EOD. I’d appreciate a written update before 2PM so I can align with Marketing.
+
+Thanks,
+ —
+ Jane Doe
+ Chief Executive Officer
+ 📞 +1 (555) 010-1987
+ ✉️

@@ -1,0 +1,1 @@
+sudo systemctl start kestrel-bullet-summarizer.service

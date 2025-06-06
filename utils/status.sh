@@ -1,0 +1,1 @@
+sudo systemctl status kestrel-bullet-summarizer.service

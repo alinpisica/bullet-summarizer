@@ -1,0 +1,1 @@
+sudo systemctl stop kestrel-bullet-summarizer.service
