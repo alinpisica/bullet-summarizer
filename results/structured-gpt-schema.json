@@ -1,0 +1,85 @@
+{
+    "type": "object",
+    "properties": {
+        "highLevelSummary": {
+            "type": "string"
+        },
+        "generalConversationalTone": {
+            "type": "string"
+        },
+        "participants": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "email": { "type": "string" },
+                    "role": { "type": "string" }
+                },
+                "required": ["name", "email", "role"],
+                "additionalProperties": false
+            }
+        },
+        "actionItems": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": { "type": "string" },
+                    "description": { "type": "string" },
+                    "assignee": { "type": "string" },
+                    "dueDate": { "type": "string" }
+                },
+                "required": ["title", "description", "assignee", "dueDate"],
+                "additionalProperties": false
+            }
+        },
+        "decisions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "content": { "type": "string" },
+                    "decidedBy": { "type": "string" },
+                    "date": { "type": "string" }
+                },
+                "required": ["content", "decidedBy", "date"],
+                "additionalProperties": false
+            }
+        },
+        "keyDatesAndDeadlines": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "label": { "type": "string" },
+                    "date": { "type": "string" }
+                },
+                "required": ["label", "date"],
+                "additionalProperties": false
+            }
+        },
+        "bullets": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "content": { "type": "string" },
+                    "relatedTo": { "type": "string" }
+                },
+                "required": ["content", "relatedTo"],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "highLevelSummary",
+        "generalConversationalTone",
+        "participants",
+        "actionItems",
+        "decisions",
+        "keyDatesAndDeadlines",
+        "bullets"
+    ],
+    "additionalProperties": false
+}
